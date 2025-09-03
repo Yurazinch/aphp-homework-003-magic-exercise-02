@@ -24,11 +24,14 @@ class UserAuthentication
     }
 
     public function setLogin($a, $b) {
-        if(!isset($a) || !isset($b))
+        if(empty($a) || empty($b))
         {
             throw new \Exception("---\n Нет данных для проверки \n---\n");               
         }
-        $this->log = $a;
-        $this->pass = $b;            
+        else
+        {
+            $this->log = $a;
+            $this->pass = $b;            
+        }
     }
 }

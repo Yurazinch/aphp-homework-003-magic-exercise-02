@@ -6,8 +6,8 @@ require_once('UserAuthentication.php');
 
 $autentication = new UserAuthentication('', '');
 
-$a = 'ivan';
-$b = 'passapp';
+//$a = 'ivan';
+//$b = 'passapp';
 
 //$a = 'ivan';
 //$b = 'passmob';
